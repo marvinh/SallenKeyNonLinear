@@ -72,7 +72,7 @@
                 double base = k2*v2;
                 float tBase = tanh(base);
                 
-                double a = sech2_with_tanh( tBase );
+                double a = 1 - tbase*tbase;
                 double b = tBase - base;
                 
                 v2 = -(g*ic1eq + ic1eq + g*ic2eq + g2v0)/(-1.0 - tg - g2 + g*(a+b));
